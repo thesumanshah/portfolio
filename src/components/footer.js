@@ -68,7 +68,7 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
+  const [setGitHubInfo] = useState({
     stars: null,
     forks: null,
   });
@@ -106,7 +106,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/thesumanshah">
-          <div>Designed &amp; Built by Brittany Chiang</div>
+          <div>Designed &amp; Built by Suman Shah</div>
 
           {/* {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">

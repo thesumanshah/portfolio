@@ -65,7 +65,8 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm Primarily interested in Web Development and Data Science. I enjoy learning new skills and implementing them in real life! I’m currently persuing my bachelor Degree at {' '}
+        I'm Primarily interested in Web Development and Data Science. I enjoy learning new skills
+        and implementing them in real life! I’m currently persuing my bachelor Degree at{' '}
         <a href="https://cihe.edu.au/" target="_blank" rel="noreferrer">
           Crown
         </a>
@@ -74,11 +75,7 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="{`mailto:${email}`}"
-      target="_blank"
-      rel="noreferrer">
+    <a className="email-link" href="/#contact">
       Contact me
     </a>
   );
