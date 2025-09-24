@@ -7,5 +7,5 @@ range: 'Feb 2021 - Jan 2022'
 url: ''
 ---
 
-Delivered comprehensive technical support to clients, resolving complex hardware and software issues  Consistently maintained a 4.8-star average rating, reflecting a high level of customer satisfaction and effective problem-solving Proficiently managed customer issues using Zendesk, ensuring timely response and resolution for escalated technical problems Provided troubleshooting and issue resolution for IT systems, enhancing the reliability of customer infrastructures
+Managed customer issues and technical troubleshooting operations using Zendesk ticketing system, ensuring timely resolution of support requests while maintaining high customer satisfaction levels through efficient issue management and comprehensive technical reporting.
 

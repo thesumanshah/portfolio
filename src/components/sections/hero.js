@@ -61,14 +61,17 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Suman Shah.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const three = <h3 className="big-heading">I build scalable solutions and automate complex systems.</h3>;
   const four = (
     <>
       <p>
-        I'm Primarily interested in Web Development and Data Science. I enjoy learning new skills
-        and implementing them in real life! I’m currently persuing my bachelor Degree at{' '}
+        I'm a Systems Engineer & Web Developer at{' '}
+        <a href="https://yieldreport.com.au" target="_blank" rel="noreferrer">
+          Foresight Analytics
+        </a>
+        , specializing in Python automation, cloud infrastructure, and full-stack development. I enjoy creating efficient solutions that solve real-world problems while pursuing my Bachelor's degree at{' '}
         <a href="https://cihe.edu.au/" target="_blank" rel="noreferrer">
-          Crown
+          Crown Institute
         </a>
         .
       </p>
