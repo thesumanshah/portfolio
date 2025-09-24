@@ -127,11 +127,17 @@ const About = () => {
 
   const skills = [
     'Python',
-    'javascript',
-    'HTML & CSS',
-    'VPN, Switching, Routing',
-    'Server Management',
-    'Figma',
+    'JavaScript',
+    'TypeScript',
+    'Next.js',
+    'HTML/CSS',
+    'Azure Cloud Platform',
+    'Microsoft 365',
+    'WordPress',
+    'PHP',
+    'SQL',
+    'API Integration',
+    'Progressive Web Apps (PWA)',
   ];
 
   return (
@@ -142,14 +148,16 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            I am an aspiring IT professional currently pursuing a Bachelor of Information Technology, with a focus on software engineering.
+            I am a Systems Engineer & Web Developer currently working at Foresight Analytics, a leading Australian investment analytics firm. I'm pursuing my Bachelor of Information Technology at Crown Institute of Higher Education.
             </p>
 
             <p>
-            I have a strong foundation in IT support, networking, and server management, gained through hands-on experience in various roles. As I advance in my studies, I am expanding my skill set by learning programming languages like Python and frameworks such as Django.            </p>
+            I specialize in Python automation, cloud infrastructure management, and full-stack web development. My expertise includes managing Microsoft 365 environments, developing automation solutions that dramatically reduce processing times, and building scalable web applications using modern technologies like Next.js and TypeScript.
+            </p>
 
             <p>
-            I am also actively working on personal projects, including web development and IT systems, to further enhance my technical expertise. I am passionate about solving complex problems and am eager to apply my growing knowledge in real-world scenarios.            </p>
+            I'm passionate about creating efficient solutions that solve real-world problems, from developing public transport apps to building enterprise-level automation systems. I enjoy working with cutting-edge technologies and constantly expanding my technical skill set.
+            </p>
 
           </div>
 

@@ -1,5 +1,7 @@
 module.exports = {
   email: 'sumanshahofficial@gmail.com',
+  phone: '(+61) 0450264044',
+  location: 'Launceston, TAS',
 
   socialMedia: [
     {
