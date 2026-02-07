@@ -162,19 +162,16 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Suman Shah.</h2>;
-  const three = <h3 className="big-heading">I build scalable solutions and automate complex systems.</h3>;
+  const three = <h3 className="big-heading">I support infrastructure and automate complex systems.</h3>;
   const four = (
     <>
       <p>
-        I'm a Systems Engineer & Web Developer at{' '}
-        <a href="https://foresight-analytics.com" target="_blank" rel="noreferrer">
-          Foresight Analytics
+        I'm an Infrastructure Support Engineer at{' '}
+        <a href="https://axiomtechnologies.com" target="_blank" rel="noreferrer">
+          Axiom Technologies
         </a>
-        , specializing in Python automation, cloud infrastructure, and full-stack development. I enjoy creating efficient solutions that solve real-world problems while pursuing my Bachelor's degree at{' '}
-        <a href="https://cihe.edu.au/" target="_blank" rel="noreferrer">
-          Crown Institute
-        </a>
-        .
+        , specializing in IT infrastructure support, cloud systems, and Python automation.
+        I maintain enterprise environments while ensuring system uptime and operational reliability.
       </p>
     </>
   );

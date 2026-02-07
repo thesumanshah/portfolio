@@ -1,13 +1,16 @@
 ---
-date: '2025-03-01'
-title: 'Systems Engineer & Web Developer'
+date: '2025-02-01'
+title: 'Systems Engineer & IT Support'
 company: 'Foresight Analytics'
-location: 'BellaVista, Sydney, NSW'
-range: 'March 2025 - Present'
+location: 'Bella Vista, NSW'
+range: 'Feb 2025 - Nov 2025'
 url: 'https://yieldreport.com.au'
 ---
 
-- Managed IT security and systems infrastructure for 15-20 Onshore & Remote employees, overseeing Microsoft 365, Intune, and Defender implementations
-- Developed Python automation solutions, reducing data collection from 1-2 days to 5 minutes, including a bank term deposit rates system covering 45+ Australian financial institutions
-- Delivered technical solutions and feature development for YieldReport.com.au and Foresight F360 platforms, supporting both internal teams and external clients
-- Architected and deployed an Azure-based advertising platform on dedicated VM infrastructure, creating a custom banner management system similar to Google Ads to generate new revenue streams
+- Managed Azure-based VM infrastructure and production web services, performing monitoring, patching, and backup verification to ensure system reliability
+- Administered Microsoft 365, Intune, and Defender environments for 20+ users, handling endpoint enrolment and security policy deployment
+- Contributed to infrastructure planning and upgrades, identifying opportunities for efficiency and reliability improvements
+- Developed Python automation scripts to streamline data workflows, reducing manual processing time by over 90%
+- Supported CI/CD pipeline operations and coordinated with development teams to ensure smooth application deployments
+- Authored comprehensive technical documentation including maintenance guides, onboarding procedures, and operational runbooks
+- Liaised with internal teams and external service providers to coordinate works and ensure compliance with operational standards

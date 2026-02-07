@@ -19,7 +19,11 @@ const variables = css`
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-mono: 'Geist Pixel Square', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-pixel-grid: 'Geist Pixel Grid', monospace;
+    --font-pixel-circle: 'Geist Pixel Circle', monospace;
+    --font-pixel-triangle: 'Geist Pixel Triangle', monospace;
+    --font-pixel-line: 'Geist Pixel Line', monospace;
 
     --fz-xxs: 12px;
     --fz-xs: 13px;
