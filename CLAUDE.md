@@ -2,14 +2,14 @@
 
 ## Project Overview
 
-Personal portfolio website for Suman Shah — a Systems Engineer & Web Developer. Built with Gatsby 3 and React 17, styled with styled-components, and deployed on Netlify. Originally forked from Brittany Chiang's v4 portfolio.
+Personal portfolio website for Suman Shah — an Infrastructure Support Engineer. Built with Gatsby 3 and React 18, styled with styled-components, and deployed on Netlify. Originally forked from Brittany Chiang's v4 portfolio.
 
 **Live site:** https://sumanshah.com
 
 ## Tech Stack
 
 - **Framework:** Gatsby 3.4.1 (static site generator with GraphQL data layer)
-- **UI:** React 17.0.2
+- **UI:** React 18.3.1
 - **Styling:** styled-components 5.3.0 with CSS custom properties
 - **Animation:** anime.js, ScrollReveal, React Transition Group
 - **Content:** Markdown with gatsby-transformer-remark (frontmatter-driven)
@@ -41,7 +41,7 @@ yarn format           # Run Prettier on all JS/JSX/JSON/MD files
 │   ├── components/       # React components
 │   │   ├── icons/        # SVG icon components + Icon.js switcher
 │   │   └── sections/     # Page section components (Hero, About, Jobs, etc.)
-│   ├── fonts/            # Custom web fonts (Calibre, SF Mono)
+│   ├── fonts/            # Custom web fonts (Calibre, Geist Pixel)
 │   ├── hooks/            # Custom React hooks
 │   ├── images/           # Image assets and favicons
 │   ├── pages/            # Gatsby file-based routing pages
@@ -134,7 +134,8 @@ tags:
   - Accent color: Green (`#64ffda`)
   - Text: Slate scale (lightest to dark)
 - **Breakpoints** (max-width): 330px, 400px, 480px, 600px, 768px, 900px, 1080px, 1200px, 1400px
-- **Fonts:** Calibre (sans-serif body), SF Mono (monospace/code)
+- **Fonts:** Calibre (sans-serif body), Geist Pixel Square (monospace/code, from Vercel's geist package)
+- **Geist Pixel variants:** Square (default mono), Grid, Circle, Triangle, Line — available via `--font-pixel-*` CSS variables
 - Use `${({ theme }) => theme.bp.tabletL}` pattern for media queries in styled-components
 - Use `${({ theme }) => theme.mixins.flexCenter}` for common layout patterns
 

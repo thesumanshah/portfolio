@@ -127,17 +127,17 @@ const About = () => {
 
   const skills = [
     'Python',
+    'PowerShell',
     'JavaScript',
-    'TypeScript',
-    'Next.js',
-    'HTML/CSS',
-    'Azure Cloud Platform',
-    'Microsoft 365',
-    'WordPress',
-    'PHP',
     'SQL',
-    'API Integration',
-    'Progressive Web Apps (PWA)',
+    'Windows Server',
+    'Linux (Ubuntu)',
+    'Azure VMs',
+    'Microsoft 365',
+    'Intune',
+    'Docker',
+    'Git',
+    'Networking (TCP/IP)',
   ];
 
   return (
@@ -148,15 +148,15 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            I am a Systems Engineer & Web Developer currently working at Foresight Analytics, a leading Australian investment analytics firm. I'm pursuing my Bachelor of Information Technology at Crown Institute of Higher Education.
+            I'm a proactive Infrastructure Support Engineer with hands-on experience maintaining and supporting IT infrastructure, facility systems, and field-based technical operations across multiple sites. Currently at Axiom Technologies in Launceston, TAS.
             </p>
 
             <p>
-            I specialize in Python automation, cloud infrastructure management, and full-stack web development. My expertise includes managing Microsoft 365 environments, developing automation solutions that dramatically reduce processing times, and building scalable web applications using modern technologies like Next.js and TypeScript.
+            I'm skilled in diagnosing and resolving hardware, software, and network issues in enterprise environments, with a strong track record of ensuring system uptime and operational reliability. My experience spans Azure cloud infrastructure, Microsoft 365 administration, Python automation, and ITIL-aligned incident management.
             </p>
 
             <p>
-            I'm passionate about creating efficient solutions that solve real-world problems, from developing public transport apps to building enterprise-level automation systems. I enjoy working with cutting-edge technologies and constantly expanding my technical skill set.
+            I hold a Bachelor of Information Technology from Crown Institute of Higher Education and I'm passionate about infrastructure reliability, automation, and continuous improvement.
             </p>
 
           </div>

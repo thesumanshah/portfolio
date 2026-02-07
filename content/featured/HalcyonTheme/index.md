@@ -9,9 +9,9 @@ tech:
   - TypeScript
   - PWA
   - TfNSW API
-  - OpenAI
-  - Telegram Bot
+  - CI/CD
+  - Service Workers
 
 ---
 
-A comprehensive real-time public transport journey planner for Sydney using TfNSW Open Data API. Features live train schedules for 200+ stations, mobile-first Progressive Web App design, offline support, and AI-powered features. Includes multi-platform accessibility through Telegram Bot integration.
+A production-grade progressive web application leveraging live transport data APIs, CI/CD pipelines, and service-worker caching for offline capability. Built with deployment automation, incident response workflows, API integration, and comprehensive technical documentation.

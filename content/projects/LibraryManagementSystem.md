@@ -1,15 +1,16 @@
 ---
 date: '2024-06-01'
-title: 'Library Management System - Crown Institute'
+title: 'Library Management System'
 github: 'https://github.com/thesumanshah/library-management-system'
 external: '#'
 tech:
   - HTML
   - CSS
   - JavaScript
-  - Bootstrap
-  - CRUD Operations
+  - SQL
+  - Authentication
+  - CRUD
 showInProjects: true
 ---
 
-Developed a comprehensive web-based Library Management System featuring admin dashboard with real-time statistics, complete CRUD operations for book/author/publisher management, secure user authentication, and responsive design using Bootstrap 5 framework for seamless cross-device functionality. Created as a university project for Crown Institute of Higher Education. 
+Developed a full-stack web application featuring secure authentication, admin dashboard, and CRUD functionality with responsive UI and SQL database integration. Documented system architecture and operational procedures.
