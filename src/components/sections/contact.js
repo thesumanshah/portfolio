@@ -60,7 +60,7 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        While I'm currently working at Foresight Analytics, I'm always open to discussing exciting new opportunities and collaborations. Whether you have a project idea, want to connect, or just want to say hi, I'll try my best to get back to you!
+        I'm available for part-time or full-time positions with full working rights. Whether you have an infrastructure role, a project idea, or just want to connect, I'll try my best to get back to you!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
