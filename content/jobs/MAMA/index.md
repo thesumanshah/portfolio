@@ -1,5 +1,5 @@
 ---
-date: '2022-01-21'
+date: '2021-02-01'
 title: 'IT Customer Support'
 company: 'Mama Enterprises'
 location: 'Kathmandu, Nepal'
@@ -7,5 +7,7 @@ range: 'Feb 2021 - Jan 2022'
 url: ''
 ---
 
-Managed customer issues and technical troubleshooting operations using Zendesk ticketing system, ensuring timely resolution of support requests while maintaining high customer satisfaction levels through efficient issue management and comprehensive technical reporting.
-
+- Delivered first-line technical support via ticketing platform, diagnosing and resolving hardware, software, and network issues
+- Maintained detailed service records and escalated complex infrastructure issues to engineering and vendor teams
+- Authored internal knowledge-base articles and troubleshooting guides, reducing recurring issues and improving team response efficiency
+- Collaborated with vendors and contractors to coordinate equipment repairs and facility maintenance activities

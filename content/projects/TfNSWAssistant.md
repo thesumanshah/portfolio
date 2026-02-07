@@ -1,6 +1,6 @@
 ---
 date: '2024-12-01'
-title: 'TfNSW Assistant - Real-Time Public Transport Journey Planner'
+title: 'TfNSW Assistant - Real-Time Journey Planner'
 github: 'https://github.com/thesumanshah/tfnsw-assistant'
 external: '#'
 tech:
@@ -8,10 +8,9 @@ tech:
   - TypeScript
   - PWA
   - TfNSW API
-  - OpenAI
-  - Telegram Bot
-  - Vercel
+  - CI/CD
+  - Service Workers
 showInProjects: true
 ---
 
-Built a comprehensive real-time public transport journey planner for Sydney using TfNSW Open Data API, providing live train schedules and platform information for 200+ stations. Developed mobile-first Progressive Web App (PWA) with Next.js and TypeScript, featuring offline support, service worker implementation, and responsive design optimized for commuters. Integrated multiple APIs including TfNSW transport data, OpenAI for AI-powered features, and Telegram Bot for multi-platform accessibility, deployed on Vercel with automated CI/CD pipeline. 
+Built a production-grade progressive web application leveraging live transport data APIs, CI/CD pipelines, and service-worker caching for offline capability. Responsibilities included deployment automation, incident response, API integration, and technical documentation.

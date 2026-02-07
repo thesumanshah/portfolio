@@ -14,15 +14,11 @@ import CalibreMediumItalicWoff2 from '@fonts/Calibre/Calibre-MediumItalic.woff2'
 import CalibreSemiboldItalicWoff from '@fonts/Calibre/Calibre-SemiboldItalic.woff';
 import CalibreSemiboldItalicWoff2 from '@fonts/Calibre/Calibre-SemiboldItalic.woff2';
 
-import SFMonoRegularWoff from '@fonts/SFMono/SFMono-Regular.woff';
-import SFMonoRegularWoff2 from '@fonts/SFMono/SFMono-Regular.woff2';
-import SFMonoSemiboldWoff from '@fonts/SFMono/SFMono-Semibold.woff';
-import SFMonoSemiboldWoff2 from '@fonts/SFMono/SFMono-Semibold.woff2';
-
-import SFMonoRegularItalicWoff from '@fonts/SFMono/SFMono-RegularItalic.woff';
-import SFMonoRegularItalicWoff2 from '@fonts/SFMono/SFMono-RegularItalic.woff2';
-import SFMonoSemiboldItalicWoff from '@fonts/SFMono/SFMono-SemiboldItalic.woff';
-import SFMonoSemiboldItalicWoff2 from '@fonts/SFMono/SFMono-SemiboldItalic.woff2';
+import GeistPixelSquare from '@fonts/GeistPixel/GeistPixel-Square.woff2';
+import GeistPixelGrid from '@fonts/GeistPixel/GeistPixel-Grid.woff2';
+import GeistPixelCircle from '@fonts/GeistPixel/GeistPixel-Circle.woff2';
+import GeistPixelTriangle from '@fonts/GeistPixel/GeistPixel-Triangle.woff2';
+import GeistPixelLine from '@fonts/GeistPixel/GeistPixel-Line.woff2';
 
 const calibreNormalWeights = {
   400: [CalibreRegularWoff, CalibreRegularWoff2],
@@ -36,26 +32,10 @@ const calibreItalicWeights = {
   600: [CalibreSemiboldItalicWoff, CalibreSemiboldItalicWoff2],
 };
 
-const sfMonoNormalWeights = {
-  400: [SFMonoRegularWoff, SFMonoRegularWoff2],
-  600: [SFMonoSemiboldWoff, SFMonoSemiboldWoff2],
-};
-
-const sfMonoItalicWeights = {
-  400: [SFMonoRegularItalicWoff, SFMonoRegularItalicWoff2],
-  600: [SFMonoSemiboldItalicWoff, SFMonoSemiboldItalicWoff2],
-};
-
 const calibre = {
   name: 'Calibre',
   normal: calibreNormalWeights,
   italic: calibreItalicWeights,
-};
-
-const sfMono = {
-  name: 'SF Mono',
-  normal: sfMonoNormalWeights,
-  italic: sfMonoItalicWeights,
 };
 
 const createFontFaces = (family, style = 'normal') => {
@@ -83,11 +63,46 @@ const createFontFaces = (family, style = 'normal') => {
 const calibreNormal = createFontFaces(calibre);
 const calibreItalic = createFontFaces(calibre, 'italic');
 
-const sfMonoNormal = createFontFaces(sfMono);
-const sfMonoItalic = createFontFaces(sfMono, 'italic');
+const geistPixelFaces = `
+  @font-face {
+    font-family: 'Geist Pixel Square';
+    src: url(${GeistPixelSquare}) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Geist Pixel Grid';
+    src: url(${GeistPixelGrid}) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Geist Pixel Circle';
+    src: url(${GeistPixelCircle}) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Geist Pixel Triangle';
+    src: url(${GeistPixelTriangle}) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Geist Pixel Line';
+    src: url(${GeistPixelLine}) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+`;
 
 const Fonts = css`
-  ${calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic}
+  ${calibreNormal + calibreItalic + geistPixelFaces}
 `;
 
 export default Fonts;

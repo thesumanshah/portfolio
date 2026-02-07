@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Suman Shah',
     description:
-      'Suman Shah is a Systems Engineer & Web Developer with expertise in Python automation, cloud infrastructure, and full-stack development.',
+      'Suman Shah is an Infrastructure Support Engineer with expertise in IT infrastructure, cloud systems, Python automation, and ITIL-aligned operations.',
     siteUrl: 'https://sumanshah.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@thesumanshah',
