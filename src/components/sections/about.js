@@ -126,18 +126,18 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Python',
+    'Microsoft 365',
+    'Azure',
+    'Intune & Defender',
+    'Active Directory',
     'PowerShell',
-    'JavaScript',
-    'SQL',
+    'Python',
     'Windows Server',
     'Linux (Ubuntu)',
-    'Azure VMs',
-    'Microsoft 365',
-    'Intune',
-    'Docker',
-    'Git',
     'Networking (TCP/IP)',
+    'Docker',
+    'ITIL / Ticketing',
+    'Git & CI/CD',
   ];
 
   return (
@@ -148,16 +148,28 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            I'm a proactive Infrastructure Support Engineer with hands-on experience maintaining and supporting IT infrastructure, facility systems, and field-based technical operations across multiple sites. Currently at Axiom Technologies in Launceston, TAS.
+              I'm an IT support and systems engineer based in Launceston, Tasmania. Most of what I
+              do comes down to the same thing — keeping people's tools working, and making sure the
+              fix sticks. That's meant everything from swapping a failed POS terminal in a post
+              office to rebuilding a Microsoft 365 tenant's security posture from scratch.
             </p>
 
             <p>
-            I'm skilled in diagnosing and resolving hardware, software, and network issues in enterprise environments, with a strong track record of ensuring system uptime and operational reliability. My experience spans Azure cloud infrastructure, Microsoft 365 administration, Python automation, and ITIL-aligned incident management.
+              Right now I'm at <a href="https://www.taswater.com.au" target="_blank" rel="noreferrer">TasWater</a> doing on-site
+              infrastructure and end-user support, and I've been the sole IT person at{' '}
+              <a href="https://yieldreport.com.au" target="_blank" rel="noreferrer">Foresight Analytics</a> since 2023 — a role I
+              grew into from an internship. There I run the Azure and Microsoft 365 environment for
+              a 20+ person investment research firm, led a security uplift across Intune, Defender
+              and MFA, and automated onboarding and reporting with PowerShell.
             </p>
 
             <p>
-            I hold a Bachelor of Information Technology from Crown Institute of Higher Education and I'm passionate about infrastructure reliability, automation, and continuous improvement.
+              I like the parts of this job that compound: a runbook that saves the next person an
+              hour, a script that turns a morning of copy-paste into a scheduled task. I hold a
+              Bachelor of Information Technology from Crown Institute of Higher Education.
             </p>
+
+            <p>Here are a few technologies I've been working with recently:</p>
 
           </div>
 

@@ -60,7 +60,9 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I'm available for part-time or full-time positions with full working rights. Whether you have an infrastructure role, a project idea, or just want to connect, I'll try my best to get back to you!
+        I'm open to infrastructure, systems, and IT support roles in Tasmania or remote, and I have
+        full working rights in Australia. If you've got a role, a project, or just a question about
+        something I've built, my inbox is open.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

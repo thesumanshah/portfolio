@@ -3,7 +3,7 @@ date: '1'
 title: 'TfNSW Assistant'
 cover: './demo.png'
 github: 'https://github.com/thesumanshah/tfnsw-assistant'
-external: '#'
+external: 'https://transport-nsw-chatbot.vercel.app'
 tech:
   - Next.js
   - TypeScript

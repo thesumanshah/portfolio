@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Suman Shah',
     description:
-      'Suman Shah is an Infrastructure Support Engineer with expertise in IT infrastructure, cloud systems, Python automation, and ITIL-aligned operations.',
+      'Suman Shah is an IT support and systems engineer in Launceston, Tasmania, working across Microsoft 365, Azure, endpoint management, and PowerShell automation.',
     siteUrl: 'https://sumanshah.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@thesumanshah',
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Suman shah',
-        short_name: 'suman shah',
+        name: 'Suman Shah',
+        short_name: 'Suman Shah',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
