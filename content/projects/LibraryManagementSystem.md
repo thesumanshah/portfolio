@@ -1,7 +1,7 @@
 ---
-date: '2024-06-01'
+date: '2025-04-01'
 title: 'Library Management System'
-github: 'https://github.com/thesumanshah/library-management-system'
+github: 'https://github.com/thesumanshah/library_system'
 external: '#'
 tech:
   - HTML

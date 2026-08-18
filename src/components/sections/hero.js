@@ -162,19 +162,26 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Suman Shah.</h2>;
-  const three = <h3 className="big-heading">I support infrastructure and automate complex systems.</h3>;
+  const three = (
+    <h3 className="big-heading">I keep infrastructure running and automate the rest.</h3>
+  );
   const four = (
     <>
       <p>
-        I'm an Infrastructure Support Engineer at{' '}
-        <a href="https://axiomtechnologies.com" target="_blank" rel="noreferrer">
-          Axiom Technologies
-        </a>
-        , specializing in IT infrastructure support, cloud systems, and Python automation.
-        I maintain enterprise environments while ensuring system uptime and operational reliability.
+        I'm an IT Support Engineer at{' '}
+        <a href="https://www.taswater.com.au" target="_blank" rel="noreferrer">
+          TasWater
+        </a>{' '}
+        in Launceston, and I look after cloud and endpoint infrastructure for{' '}
+        <a href="https://yieldreport.com.au" target="_blank" rel="noreferrer">
+          Foresight Analytics
+        </a>{' '}
+        alongside it. My work sits between hands-on field support and the automation that stops the
+        same ticket coming back.
       </p>
     </>
   );
+
   const five = (
     <a className="email-link" href="/#contact">
       Contact me

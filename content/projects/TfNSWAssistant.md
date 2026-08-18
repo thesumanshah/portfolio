@@ -1,8 +1,8 @@
 ---
-date: '2024-12-01'
+date: '2025-08-01'
 title: 'TfNSW Assistant - Real-Time Journey Planner'
 github: 'https://github.com/thesumanshah/tfnsw-assistant'
-external: '#'
+external: 'https://transport-nsw-chatbot.vercel.app'
 tech:
   - Next.js
   - TypeScript
