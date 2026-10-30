@@ -13,6 +13,7 @@ const StyledHeroWrapper = styled.div`
   height: 100vh;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
+  isolation: isolate; /* keeps the wyrm's own huge z-index under the nav */
 `;
 
 const StyledHeroBackground = styled.div`
@@ -187,6 +188,9 @@ const Hero = () => {
 
   const items = [one, two, three, four, five];
 
+  // Full size, the wyrm covers the bio on a phone. Pal only renders in the browser
+  const isSmallScreen = typeof window !== 'undefined' && window.innerWidth <= 768;
+
   return (
     <StyledHeroWrapper>
       <StyledHeroBackground>
@@ -213,6 +217,7 @@ const Hero = () => {
           )}
         </div>
       </StyledHeroContent>
+      <Pal pal="wyrm" size={isSmallScreen ? 0.5 : 1} pixel={isSmallScreen ? 2 : 3} />
     </StyledHeroWrapper>
   );
 };

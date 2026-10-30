@@ -20,7 +20,10 @@ const Pal = ({ pal, ...attrs }) => {
     return null;
   }
 
-  return <piix-pal pal={pal} {...attrs} />;
+  // Wyrm is newer than the npm core, whose <piix-pal> doesn't know how to start it
+  const Tag = pal === 'wyrm' ? 'piix-wyrm' : 'piix-pal';
+
+  return <Tag pal={pal} {...attrs} />;
 };
 
 Pal.propTypes = {

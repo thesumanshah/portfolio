@@ -3,6 +3,13 @@ const pals = {
   bitbug: () => import('piixpal/c/bitbug'),
   boing: () => import('piixpal/c/boing'),
   pip: () => import('piixpal/c/pip'),
+  thread: () => import('piixpal/c/thread'),
+  // Not on npm yet, copied from diiviikk5/Piixpal@54b56d2 (MIT). Swap to piixpal/c/wyrm once it is
+  wyrm: () => {
+    // It also calls a sound helper the npm core doesn't have, so give it a silent one
+    window.Piixpal._k.sfx = () => {};
+    return import('../vendor/piixpal-wyrm.min.js');
+  },
 };
 
 let core;
