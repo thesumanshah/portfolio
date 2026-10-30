@@ -95,6 +95,10 @@ const GlobalStyle = createGlobalStyle`
         background-color: transparent;
       }
 
+      [data-piixpal] {
+        visibility: hidden;
+      }
+
       #content > * {
         filter: blur(5px) brightness(0.7);
         transition: var(--transition);

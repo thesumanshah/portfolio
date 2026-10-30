@@ -44,6 +44,8 @@ const variables = css`
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
+    --piix-z: 10;
+
     --hamburger-width: 30px;
 
     --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;

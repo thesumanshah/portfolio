@@ -5,6 +5,7 @@ import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 import Stars from '../stars';
 import Nebula from '../nebula';
+import Pal from '../pal';
 
 const StyledHeroWrapper = styled.div`
   position: relative;
@@ -12,6 +13,7 @@ const StyledHeroWrapper = styled.div`
   height: 100vh;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
+  isolation: isolate; /* keeps the wyrm's own huge z-index under the nav */
 `;
 
 const StyledHeroBackground = styled.div`
@@ -55,7 +57,7 @@ const StyledHeroContent = styled.div`
     z-index: 10;
     width: 100%;
     margin-top: 100px;
-    
+
     @media (max-width: 768px) {
       margin-top: 80px;
     }
@@ -71,9 +73,7 @@ const StyledHeroContent = styled.div`
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
-    text-shadow: 
-      0 0 10px rgba(100, 255, 218, 0.8),
-      0 0 20px rgba(100, 255, 218, 0.4),
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.8), 0 0 20px rgba(100, 255, 218, 0.4),
       2px 2px 4px rgba(0, 0, 0, 0.8);
 
     @media (max-width: 480px) {
@@ -82,9 +82,7 @@ const StyledHeroContent = styled.div`
   }
 
   h2.big-heading {
-    text-shadow: 
-      0 0 20px rgba(255, 255, 255, 0.3),
-      0 0 40px rgba(255, 255, 255, 0.1),
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1),
       2px 2px 8px rgba(0, 0, 0, 0.8);
   }
 
@@ -92,18 +90,14 @@ const StyledHeroContent = styled.div`
     margin-top: 5px;
     color: var(--slate);
     line-height: 0.9;
-    text-shadow: 
-      0 0 15px rgba(255, 255, 255, 0.2),
-      2px 2px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8);
   }
 
   p {
     margin: 20px 0 0;
     max-width: 540px;
     color: var(--light-slate);
-    text-shadow: 
-      0 0 10px rgba(255, 255, 255, 0.1),
-      1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.8);
     background: rgba(10, 25, 47, 0.3);
     padding: 15px;
     border-radius: 8px;
@@ -117,17 +111,13 @@ const StyledHeroContent = styled.div`
     background: rgba(100, 255, 218, 0.1);
     border: 2px solid var(--green);
     backdrop-filter: blur(10px);
-    box-shadow: 
-      0 0 20px rgba(100, 255, 218, 0.4),
-      0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.4), 0 4px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     text-shadow: 0 0 8px rgba(100, 255, 218, 0.8);
 
     &:hover {
       background: rgba(100, 255, 218, 0.2);
-      box-shadow: 
-        0 0 30px rgba(100, 255, 218, 0.6),
-        0 6px 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 30px rgba(100, 255, 218, 0.6), 0 6px 20px rgba(0, 0, 0, 0.5);
       transform: translateY(-3px);
     }
   }
@@ -141,7 +131,7 @@ const StyledHeroContent = styled.div`
     right: 0;
     bottom: 0;
     background: radial-gradient(circle at 30% 40%, rgba(100, 255, 218, 0.02) 0%, transparent 60%),
-                radial-gradient(circle at 70% 80%, rgba(100, 255, 218, 0.01) 0%, transparent 60%);
+      radial-gradient(circle at 70% 80%, rgba(100, 255, 218, 0.01) 0%, transparent 60%);
     z-index: 0;
     pointer-events: none;
   }
@@ -161,7 +151,12 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Suman Shah.</h2>;
+  const two = (
+    <h2 className="big-heading">
+      Suman Shah.
+      <Pal pal="bitbug" hue="90" />
+    </h2>
+  );
   const three = (
     <h3 className="big-heading">I keep infrastructure running and automate the rest.</h3>
   );
@@ -183,12 +178,18 @@ const Hero = () => {
   );
 
   const five = (
-    <a className="email-link" href="/#contact">
-      Contact me
-    </a>
+    <>
+      <a className="email-link" href="/#contact">
+        Contact me
+      </a>
+      <Pal pal="pip" on=".hero-inner .email-link" />
+    </>
   );
 
   const items = [one, two, three, four, five];
+
+  // Full size, the wyrm covers the bio on a phone. Pal only renders in the browser
+  const isSmallScreen = typeof window !== 'undefined' && window.innerWidth <= 768;
 
   return (
     <StyledHeroWrapper>
@@ -216,6 +217,7 @@ const Hero = () => {
           )}
         </div>
       </StyledHeroContent>
+      <Pal pal="wyrm" size={isSmallScreen ? 0.5 : 1} pixel={isSmallScreen ? 2 : 3} />
     </StyledHeroWrapper>
   );
 };
