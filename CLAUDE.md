@@ -11,7 +11,7 @@ Personal portfolio website for Suman Shah — an Infrastructure Support Engineer
 - **Framework:** Gatsby 3.4.1 (static site generator with GraphQL data layer)
 - **UI:** React 18.3.1
 - **Styling:** styled-components 5.3.0 with CSS custom properties
-- **Animation:** anime.js, ScrollReveal, React Transition Group
+- **Animation:** anime.js, ScrollReveal, React Transition Group, Piixpal (pixel pals via the `Pal` component; add new pals to the map in `src/utils/piixpal.js`)
 - **Content:** Markdown with gatsby-transformer-remark (frontmatter-driven)
 - **Code highlighting:** PrismJS via gatsby-remark-prismjs
 - **Node version:** 14.16.0 (see `.nvmrc`)
@@ -60,20 +60,21 @@ yarn format           # Run Prettier on all JS/JSX/JSON/MD files
 
 Configured in `gatsby-node.js` — use these for imports:
 
-| Alias | Path |
-|-------|------|
+| Alias         | Path             |
+| ------------- | ---------------- |
 | `@components` | `src/components` |
-| `@config` | `src/config` |
-| `@fonts` | `src/fonts` |
-| `@hooks` | `src/hooks` |
-| `@images` | `src/images` |
-| `@pages` | `src/pages` |
-| `@styles` | `src/styles` |
-| `@utils` | `src/utils` |
+| `@config`     | `src/config`     |
+| `@fonts`      | `src/fonts`      |
+| `@hooks`      | `src/hooks`      |
+| `@images`     | `src/images`     |
+| `@pages`      | `src/pages`      |
+| `@styles`     | `src/styles`     |
+| `@utils`      | `src/utils`      |
 
 ## Routing
 
 **Static pages (file-based):**
+
 - `/` — Homepage (Hero, About, Jobs, Featured, Contact sections)
 - `/archive` — Projects archive table
 - `/404` — Custom 404 page
@@ -81,6 +82,7 @@ Configured in `gatsby-node.js` — use these for imports:
 - `/pensieve/tags` — All tags page
 
 **Dynamic pages (created in gatsby-node.js):**
+
 - `/pensieve/[slug]` — Individual blog posts from `content/posts/`
 - `/pensieve/tags/[tag]` — Posts filtered by tag (kebab-case URLs)
 
@@ -91,6 +93,7 @@ Configured in `gatsby-node.js` — use these for imports:
 Content lives in `/content/` as Markdown files with YAML frontmatter. Each content type has its own directory and frontmatter schema:
 
 **Jobs** (`content/jobs/`):
+
 ```yaml
 date: '2025-03-01'
 title: 'Position Title'
@@ -101,6 +104,7 @@ url: 'https://company.com'
 ```
 
 **Featured projects** (`content/featured/`):
+
 ```yaml
 date: '2025-01-01'
 title: 'Project Name'
@@ -113,6 +117,7 @@ external: 'https://live-url.com'
 ```
 
 **Blog posts** (`content/posts/`):
+
 ```yaml
 title: 'Post Title'
 description: 'Short description'

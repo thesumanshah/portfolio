@@ -9515,6 +9515,11 @@ pify@^4.0.1:
   resolved "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
+piixpal@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/piixpal/-/piixpal-0.4.0.tgz#ca350b444538a7a1a8b5f8b020aad907c86d4daf"
+  integrity sha512-KvWiYCtQxPgDb+7frJGnhtqxyijlSbNY9IZx34WUnInEdIDbELQhRLk0A1XqR3UgBKq3LukGmd8fVdoXLKn1xw==
+
 pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npmjs.org/pkg-dir/-/pkg-dir-4.2.0.tgz"

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import Pal from '../pal';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -68,6 +69,7 @@ const Contact = () => {
       <a className="email-link" href={`mailto:${email}`}>
         Say Hello
       </a>
+      <Pal pal="pip" on="#contact .email-link" />
     </StyledContactSection>
   );
 };
